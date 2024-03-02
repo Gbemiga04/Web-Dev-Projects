@@ -1,0 +1,56 @@
+.sidebar{
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    top: 66px;
+    width: 250px;
+    background-color:white;
+
+}
+.sidebar-link{
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0px
+    
+}
+.sidebar-link:hover{
+    background-color: rgb(233, 233, 233);
+    cursor: pointer;
+}
+.sidebar-link img {
+    height:30px;
+    margin-left: 25px;
+}
+.sidebar-label{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+    font-size: 16px;
+}
+.subscriptions{
+    margin-top: 20px;
+}
+.navigation-icons{
+    padding-bottom: 20px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(233, 232, 232);
+    z-index: 20;
+
+}
+.subscriptions-text{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.subscriprion-pics{
+    border-radius: 50%;
+}
