@@ -1,9 +1,12 @@
 .tweet-container{
-    width: 600px;
+    width: 628px;
     display: flex;
     flex-direction: row;
     height: 100px;
     justify-content: space-between;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    padding-bottom: 20px;
+    padding-left: 20px;
 }
 .profile-pic-container img{
     border-radius: 50%;
