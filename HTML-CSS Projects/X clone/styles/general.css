@@ -1,10 +1,31 @@
 body{
-display: flex;
-flex-direction: row;
-justify-content: center;
-padding-top: 60px;
-padding-right: 80px;
-height: 100000px;
+margin: 0;
+padding-left: 396px;
+padding-top: 0px;
+height: 10000px;
 border-right: 1px solid rgb(224, 224, 224);
 z-index: 0;
+}
+.body-two{
+    /* position: fixed;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    width: 440px;
+    background-color:white;
+    border-right: 1px solid rgb(224, 224, 224);
+    padding-top: 20px;
+    padding-left: 5px; */
+    z-index: 0;
+    overflow: auto;
+    height: 800px;
+    border-left: 1px solid rgb(224, 224, 224);
+
+    position: sticky;
+    top: 0;
+
+}
+.body-one{
+    height: 100%;
+    padding-top: 70px;
 }
