@@ -130,6 +130,9 @@ outline: 0 !important;
     padding-top: 10px;
     padding-left: 30px;
     padding-bottom: 25px;
+
+    z-index: 2;
+
 }
 .search-button-icon img{
     width: 15px;
@@ -149,5 +152,205 @@ outline: 0 !important;
     cursor: pointer;
 }
 .premium{
+    margin-left: 30px;
+    background-color: rgb(243, 243, 243);
+    width: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0 20px 30px;
+    margin-bottom: 30px;
+    margin-top: 25px;
+    row-gap: 15px;
+
+}
+button.post-button {
+    background-color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 24px;
+    padding-left: 24px;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    letter-spacing: 0.4px;
+    transition: box-shadow 0.15s, margin-left, 0.15s, margin-top, 0.15s,
+      box-shadow 0.15s;
+}
+button.post-button:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+button.post-button:active {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
+    margin-left: 3px;
+    margin-top: 3px;
+}
+.main-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 22px;
+}
+.secondary-text{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(109, 109, 109);
+}
+.trending-tab{
+    margin-left: 30px;
+    background-color: rgb(243, 243, 243);
+    width: 330px;
+    height: 450px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0 20px 0px;
+    margin-bottom: 30px;
+
+}
+.trending-with-photo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-top: 20px;
     padding-left: 30px;
+}
+.trending-pic img{
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.trending-text{
+    font-family: 'Roboto', sans-serif; 
+    padding-bottom: 7px;
+    padding-top: 2px;
+    font-weight: 600;
+    
+}
+.trending-subtext{
+    font-family: 'Roboto', sans-serif; 
+    font-size: 13px;
+    color: rgb(104, 104, 104);
+}
+.more-button img{
+    width: 10px;
+
+}
+.trending-with-photo:hover{
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+}
+.trending{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    transition: background-color 0.15s;
+    padding-left: 30px;
+}
+.trending:hover{
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+}
+.more-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.main-texts{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 22px;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.show-more{
+    font-family: 'Roboto', sans-serif;
+    padding-left: 30px;
+    padding-top: 7px;
+    height:max-content;
+    padding-bottom: 20px;
+    border-radius: 0px 0px 20px 20px;
+    color: rgb(28, 95, 158);
+}
+.show-more:hover{
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+
+}
+.following-tab{
+    margin-left: 30px;
+    background-color: rgb(243, 243, 243);
+    width: 330px;
+    height: 285px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0 20px 0px;
+    margin-bottom: 30px;
+
+}
+.following-pics img{
+    width: 50px;
+    border-radius: 50%;
+    padding-right: 10px;
+}
+.trendings{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    transition: background-color 0.15s;
+    padding-left: 30px;
+}
+.following-arrange{
+    display: flex;
+    flex-direction: row;
+}
+.main-textss{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 22px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+}
+button.follow-button {
+    background-color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 24px;
+    padding-left: 24px;
+    border-radius: 40px;
+    font-weight: 900;
+    font-size: 13px;
+    cursor: pointer;
+    letter-spacing: 0.4px;
+    transition: box-shadow 0.15s, margin-left, 0.15s, margin-top, 0.15s,
+      box-shadow 0.15s;
+}
+button.follow-button:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+button.follow-button:active {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
+    margin-left: 3px;
+    margin-top: 3px;
+}
+.follow-button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
