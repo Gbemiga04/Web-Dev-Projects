@@ -2,7 +2,6 @@
     width: 628px;
     display: flex;
     flex-direction: row;
-    height: 100px;
     justify-content: space-between;
     border-bottom: 1px solid rgb(224, 224, 224);
     padding-bottom: 20px;
@@ -43,7 +42,7 @@
 .icons-container{
     margin-left: 10px;
     padding-bottom: 0px;
-    padding-top: 0px;
+    padding-top: 20px;
     width: 200px;
     height: 50px;
     display: flex;
@@ -121,6 +120,7 @@ outline: 0 !important;
 }
 .search-bar::placeholder{
     font-family: 'Roboto', sans-serif;
+    font-size: 15px;
 }
 
 
@@ -353,4 +353,26 @@ button.follow-button:active {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+.more-posts{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+.more-posts-button{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(89, 152, 230);
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border: 0;
+    transition: background-color 0.15s;
+    font-size: 16px;
+}
+.more-posts-button:hover{
+    background-color:rgb(231, 231, 231);
+    cursor: pointer;
 }
