@@ -117,6 +117,7 @@ border-radius: 0px 40px 40px 0;
 background-color: rgb(243, 243, 243);
 border:0;
 outline: 0 !important;
+font-family: 'Roboto', sans-serif;
 }
 .search-bar::placeholder{
     font-family: 'Roboto', sans-serif;
@@ -375,4 +376,165 @@ button.follow-button:active {
 .more-posts-button:hover{
     background-color:rgb(231, 231, 231);
     cursor: pointer;
+}
+.tweet-containers{
+    width: 628px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+.post-body-container{
+    position: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 628px;
+}
+.post-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+.name-and-tag{
+    display: flex;
+    flex-direction: row;
+}
+.post-text{
+    padding-top: 7px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.tags{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(129, 129, 129);
+    font-size: 14px;
+    padding-left: 5px;
+    padding-top: 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.reactions-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.icons-bar{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content:space-between;
+}
+
+.comment-bar img{
+    height: 18px;
+}
+.comment-bar{
+    display: flex;
+    flex-direction: row;
+}
+.repost-bar{
+    display: flex;
+    flex-direction: row;
+}
+.repost-bar img{
+        height: 18px;
+        margin-right: 6px;
+}
+.bookmark-share{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+.comment-container{
+    height: 18px;
+}
+.comment-button{
+    padding: 5px 5px 5px 5px;
+    border-radius: 50%;
+    border: 0;
+    background-color: transparent;
+}
+.comment-button:hover{
+    background-color: rgb(149, 238, 250);
+    opacity: 0.5;
+    cursor: pointer;
+}
+.comment-button:hover .comment-container img{
+    height: 20px;
+}
+.repost-button{
+    padding: 5px 5px 5px 5px;
+    border-radius: 50%;
+    border: 0;
+    background-color: transparent;
+}
+.repost-button:hover{
+    background-color: rgb(152, 255, 157);
+    opacity: 0.5;
+    cursor: pointer;
+}
+.repost-button:hover .comment-container img{
+    height: 20px;
+}
+.like-button{
+    padding: 5px 5px 5px 5px;
+    border-radius: 50%;
+    border: 0;
+    background-color: transparent;
+}
+.like-button:hover{
+    background-color: rgb(255, 155, 155);
+    opacity: 0.5;
+    cursor: pointer;
+}
+.like-button:hover .comment-container img{
+    height: 20px;
+}
+.views-button{
+    padding: 5px 5px 5px 5px;
+    border-radius: 50%;
+    border: 0;
+    background-color: transparent;
+}
+.views-button:hover{
+    background-color: rgb(149, 218, 250);
+    opacity: 0.5;
+    cursor: pointer;
+}
+.views-button:hover .comment-container img{
+    height: 20px;
+}
+.bookmark-container img{
+    height: 18px;
+}
+.bookmark-button{
+    padding: 5px 5px 5px 5px;
+    border-radius: 50%;
+    border: 0;
+    background-color: transparent;
+    margin-right: 7px;
+}
+.bookmark-button:hover{
+    background-color: rgb(149, 218, 250);
+    opacity: 0.5;
+    cursor: pointer;
+}
+.tweet-containers:hover{
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+}
+.picture-holder img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border: 1px solid rgb(224, 224, 224);;
+}
+.picture-holder{
+
 }
