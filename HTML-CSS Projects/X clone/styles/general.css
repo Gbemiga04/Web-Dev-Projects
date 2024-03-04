@@ -2,7 +2,7 @@ body{
 margin: 0;
 padding-left: 396px;
 padding-top: 0px;
-height: 10000px;
+height: 100%;
 border-right: 1px solid rgb(224, 224, 224);
 z-index: 0;
 }

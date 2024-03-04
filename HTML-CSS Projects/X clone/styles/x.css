@@ -530,11 +530,20 @@ button.follow-button:active {
     cursor: pointer;
 }
 .picture-holder img{
+    width:100%;
+    height: auto;
+    border-radius: 20px;
+    border: 1px solid rgb(224, 224, 224);
+}
+.video-holder video{
     width: 100%;
     height: auto;
     border-radius: 20px;
-    border: 1px solid rgb(224, 224, 224);;
+    border: 1px solid rgb(224, 224, 224);
 }
 .picture-holder{
-
+    z-index: 1000000;
+}
+.video-holder{
+    z-index: 1000000;
 }
