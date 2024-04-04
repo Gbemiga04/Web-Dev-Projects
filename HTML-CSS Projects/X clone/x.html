@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="styles/x.css" />
   <link rel="stylesheet" href="styles/header.css" />
   <link rel="stylesheet" href="styles/general.css" />
+  
   <title>X</title>
 </head>
 <body>
@@ -104,7 +105,7 @@
 
     <div>
       <div class="sidebar-icons-panels">
-        <button class="tweet-1">Post</button>
+        <a href="#page-move"><button class="tweet-1">Post</button></a>
       </div>
     </div>
     <button class="profile-button">
@@ -129,11 +130,12 @@
             <img src="profile-pics/unnamed (1).jpg" alt="" />
           </div>
           <div class="tweet-body-container">
-            <div class="tweet-text">
+            <div class="tweet-text" >
               <input
                 class="text-box"
                 type="text"
                 placeholder="What is happening?!"
+                id="page-move"
               />
             </div>
 
@@ -613,6 +615,7 @@
           </div>
         </div>
       </div>
+      
       <!-- <div>copy and paste template unto here</div>
       <div>copy and paste template unto here</div>
       <div>copy and paste template unto here</div>
@@ -645,7 +648,9 @@
             ads revenue.
           </div>
           <div>
-            <div><button class="post-button">Subscribe</button></div>
+            <div><button class="post-button-1" onclick="
+            subscribe();
+            ">Subscribe</button></div>
           </div>
         </div>
         <div class="trending-tab">
@@ -717,7 +722,9 @@
               </div>
             </div>
             <div class="follow-button-container">
-              <button class="follow-button">Follow</button>
+              <button class="follow-button" onclick="
+              subscribed();
+                ">Follow</button>
             </div>
           </div>
           <div class="trendings">
@@ -731,7 +738,9 @@
               </div>
             </div>
             <div class="follow-button-container">
-              <button class="follow-button">Follow</button>
+              <button class="follow-button-1" onclick="
+              subscribed1();
+                ">Follow</button>
             </div>
           </div>
           <div class="trendings">
@@ -745,7 +754,9 @@
               </div>
             </div>
             <div class="follow-button-container">
-              <button class="follow-button">Follow</button>
+              <button class="follow-button-2" onclick="
+              subscribed2();
+                ">Follow</button>
             </div>
           </div>
           <div class="show-more">Show more</div>
@@ -767,4 +778,6 @@
       </div>
     </div>
   </div>
+  <script type="text/javascript" src="script.js">
+  </script>
 </body>
