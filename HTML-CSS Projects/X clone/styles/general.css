@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth !important;
+}
 body{
 margin: 0;
 padding-left: 396px;
@@ -50,7 +53,4 @@ z-index: 0;
 p{
     margin: 0;
     font-family: 'Roboto', sans-serif; 
-}
-html {  
-    scroll-behavior: smooth;  
 }
