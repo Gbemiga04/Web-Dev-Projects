@@ -1,4 +1,4 @@
-I don't exactly understand how GitHub works so below is a site that can be used to run the website directly from the internet.
+below is a site that can be used to run the website directly from the internet.
 
 https://htmlpreview.github.io/
 
