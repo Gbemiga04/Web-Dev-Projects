@@ -1,5 +1,0 @@
-I don't exactly understand how GitHub works so below is a site that can be used to run the website directly from the internet.
-
-https://htmlpreview.github.io/
-
-Open the html file in my repository and copy the web URL and paste in the website above. Thanks for viewing my work :)
