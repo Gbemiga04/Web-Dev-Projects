@@ -27,6 +27,7 @@
     outline: 0 !important;
     margin-left: 10px;
     border: 0px;
+    width: 100%;
 }
 .text-box::placeholder{
     font-family: 'Roboto', sans-serif;

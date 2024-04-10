@@ -10,7 +10,7 @@
     href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
     rel="stylesheet"
   />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /> 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -106,13 +106,15 @@
 
     <div>
       <div class="sidebar-icons-panels">
-        <a href="#page-move"><button class="tweet-1">Post</button></a>
+        <a href="#page-move"><button class="tweet-1" onclick="
+          post()
+          ">Post</button></a>
       </div>
     </div>
     <button class="profile-button">
       <div class="sidebar-icons-panelss">
         <div class="profile-pic-container-sidebar">
-          <img src="profile-pics/unnamed (1).jpg" alt="" />
+          <img src="profile-pics/channel-20.jpg" alt="" />
         </div>
         <div class="names-sidebar">
           <div class="username">DrSimp</div>
@@ -128,7 +130,7 @@
       <div class="tweet-container">
         <div class="body-container">
           <div class="profile-pic-container">
-            <img src="profile-pics/unnamed (1).jpg" alt="" />
+            <img src="profile-pics/channel-20.jpg" alt="" />
           </div>
           <div class="tweet-body-container">
             <div class="tweet-text" >
@@ -137,6 +139,8 @@
                 type="text"
                 placeholder="What is happening?!"
                 id="page-move"
+                onkeydown="
+                enterKey(event)"
               />
             </div>
 
@@ -176,15 +180,19 @@
         </div>
 
         <div class="post">
-          <div><button class="tweet">Post</button></div>
+          <div><button class="tweet" onclick="
+            post()
+            ">Post</button></div>
         </div>
       </div>
 
       <div class="more-posts">
         <button class="more-posts-button">Show 210 posts</button>
       </div>
-      <div class="tweet-containers">
-        
+      <div class="blank-template"></div>
+      <div class="blank-template"></div>
+      <div class="blank-template"></div>
+      <div class="tweet-containers">  
         <div class="profile-pic-container">
           <img src="profile-pics/channel-6.jpeg" alt="" />
         </div>
