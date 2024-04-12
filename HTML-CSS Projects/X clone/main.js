@@ -43,24 +43,55 @@ function subscribe() {
       post()
     }
   }
+  let userInteractions = {
+    like : 0,
+    comments : 0,
+    reposts : 0,
+    views : 0
+  }
+  let likeStatus = false;
+  let repostStatus = false;
 
   function post(){
     const postValue = document.querySelector(".text-box").value
     const postContent = document.querySelector(".blank-template")
     if(postValue != ""){
-      let userInteractions = {
-        like : 0,
-        comments : 0,
-        reposts : 0,
-        views : 0
-      }
+
+      // document.body.appendChild(`<div class="tweet-containers"><div class="profile-pic-container"><img src="profile-pics/${identityPic}.jpg" alt="" /></div><div class="post-body-container"><div class="post-header"><div class="name-and-tag"><div class="username">${nameOfUser}</div><div class="tags">@${nameOfUserName}</div></div><div class="more-button"><img src="icons/more (1).png" alt="" /></div></div><div class="post-text"><p>${postValue}</p></div><div class="reactions-bar"><div class="icons-bar"><div class="comment-bar"><button class="comment-button"><div class="comment-container"><img src="icons/comment.svg" alt="" /></div></button><div class="tags">${userInteractions.comments}</div></div><div class="comment-bar"><button class="repost-button"><div class="comment-container"><img src="icons/music.png" alt="" /></div></button><div class="tags">${userInteractions.reposts}</div></div><div class="comment-bar"><button class="like-button"><div class="comment-container"><img src="icons/like.png" alt="" /></div></button><div class="tags">${userInteractions.like}</div></div><div class="comment-bar"><button class="views-button"><div class="comment-container"><img src="icons/vertical-bar-graph.png" alt="" /></div></button><div class="tags">${userInteractions.views}</div></div></div><div class="bookmark-share"><button class="bookmark-button"><div class="bookmark-container"><img src="icons/save-instagram.png" alt="" /></div></button><button class="bookmark-button"><div class="bookmark-container"><img src="icons/upload.png" alt="" /></div></button></div></div></div></div>`)
       const identityPic = "channel-20"
       const nameOfUser = "DrSimp"
-      const nameOfUserName = "DrSimp119"
-      
-      
-      document.querySelector(".blank-template").innerHTML = `<div class="tweet-containers"><div class="profile-pic-container"><img src="profile-pics/${identityPic}.jpg" alt="" /></div><div class="post-body-container"><div class="post-header"><div class="name-and-tag"><div class="username">${nameOfUser}</div><div class="tags">@${nameOfUserName}</div></div><div class="more-button"><img src="icons/more (1).png" alt="" /></div></div><div class="post-text"><p>${postValue}</p></div><div class="reactions-bar"><div class="icons-bar"><div class="comment-bar"><button class="comment-button"><div class="comment-container"><img src="icons/comment.svg" alt="" /></div></button><div class="tags">${userInteractions.comments}</div></div><div class="comment-bar"><button class="repost-button"><div class="comment-container"><img src="icons/music.png" alt="" /></div></button><div class="tags">${userInteractions.reposts}</div></div><div class="comment-bar"><button class="like-button"><div class="comment-container"><img src="icons/like.png" alt="" /></div></button><div class="tags">${userInteractions.like}</div></div><div class="comment-bar"><button class="views-button"><div class="comment-container"><img src="icons/vertical-bar-graph.png" alt="" /></div></button><div class="tags">${userInteractions.views}</div></div></div><div class="bookmark-share"><button class="bookmark-button"><div class="bookmark-container"><img src="icons/save-instagram.png" alt="" /></div></button><button class="bookmark-button"><div class="bookmark-container"><img src="icons/upload.png" alt="" /></div></button></div></div></div></div>`
+      const nameOfUserName = "LSkeeny"
+       
+      document.querySelector(".blank-template").innerHTML = `<div class="tweet-containers"><div class="profile-pic-container"><img src="profile-pics/${identityPic}.jpg" alt="" /></div><div class="post-body-container"><div class="post-header"><div class="name-and-tag"><div class="username">${nameOfUser}</div><div class="tags">@${nameOfUserName}</div></div><div class="more-button"><img src="icons/more (1).png" alt="" /></div></div><div class="post-text"><p>${postValue}</p></div><div class="reactions-bar"><div class="icons-bar"><div class="comment-bar"><button class="comment-button"><div class="comment-container"><img src="icons/comment.svg" alt="" /></div></button><div class="tags">${userInteractions.comments}</div></div><div class="comment-bar"><button class="repost-button" onclick="repost(this)"><div class="comment-container"><img src="icons/music.png" alt="" /></div></button><div class="tags">${userInteractions.reposts}</div></div><div class="comment-bar"><button class="like-button" onclick="like(this)"><div class="comment-container"><img src="icons/like.png" alt="" /></div></button><div class="tags">${userInteractions.like}</div></div><div class="comment-bar"><button class="views-button"><div class="comment-container"><img src="icons/vertical-bar-graph.png" alt="" /></div></button><div class="tags">${userInteractions.views}</div></div></div><div class="bookmark-share"><button class="bookmark-button"><div class="bookmark-container"><img src="icons/save-instagram.png" alt="" /></div></button><button class="bookmark-button"><div class="bookmark-container"><img src="icons/upload.png" alt="" /></div></button></div></div></div></div>`
       document.querySelector(".text-box").value = ""
+    
   }
   }
+function like(obj){
+  if (!likeStatus){
+    userInteractions.like = userInteractions.like + 1;}
+  else{
+    userInteractions.like = userInteractions.like - 1;
+  }
+  likeStatus = !likeStatus
+  console.log(userInteractions.like);
+  obj.parentNode.querySelector(".tags").innerHTML = userInteractions.like
+  
+  return userInteractions.like;
+}
+function repost(obj){
+  if (!repostStatus){
+    userInteractions.reposts = userInteractions.reposts + 1;}
+  else{
+    userInteractions.reposts = userInteractions.reposts - 1;
+  }
+  repostStatus = !repostStatus
+  console.log(userInteractions.reposts);
+  obj.parentNode.querySelector(".tags").innerHTML = userInteractions.reposts
+  
+  return userInteractions.reposts;
+}
+
+
+
   
