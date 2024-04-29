@@ -1,0 +1,48 @@
+body{
+    background-color: black;
+    height: 1000px;
+}
+.menu-bar-text-name{
+    color: white;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0 0 20px;
+    font-size: 20px;
+
+}
+.menu-bar{
+    color: white;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    padding-top: 10px;
+}
+.menu-bar-text{
+    display: flex;
+    flex-direction: row;
+
+}
+.menu-text{
+    font-size: 20px;
+    padding: 10px 0 0 40px
+}
+.menu-icons{
+    length: 30px;
+    width: 30px;
+    padding: 7px 0 0 20px
+}
+.menu-icons-segment{
+    display: flex;
+    flex-direction: row;
+}
+.menu-icons-end{
+    length: 30px;
+    width: 30px;
+    padding: 7px 40px 0 30px
+}
