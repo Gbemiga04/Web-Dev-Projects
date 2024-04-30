@@ -10,7 +10,13 @@ body{
     flex-direction: row;
     padding: 10px 0 0 20px;
     font-size: 20px;
+    transition: font-size 0.15s;
 
+}
+.menu-bar-text-name:hover{
+    cursor: pointer;
+    color: rgb(189, 189, 189);
+    font-size: 22px;
 }
 .menu-bar{
     color: white;
@@ -43,8 +49,8 @@ body{
     width: 0px;
     z-index: 10000;
     bottom: 0;
-    height: 5px;
-    border-radius: 10px;
+    height: 2px;
+    border-radius: 0px;
     position: absolute;
     background: white;
     transition: width, 0.15s;
@@ -53,7 +59,7 @@ body{
     width: 110%;
 }
 .menu-icons-linkedin{
-    length: 30px;
+    height: 30px;
     width: 30px;
     margin: 7px 0 0 20px;
     transition: height, 0.15s;
@@ -65,11 +71,11 @@ body{
     flex-direction: row;
 }
 .menu-icons-end{
-    length: 30px;
+    height: 30px;
     width: 30px;
-    margin: 7px 40px 0 30px;
+    margin: 7px 0px 0 0px;
     transition: height, 0.15s;
-    transition: width, 0.15s;
+    transition: width, 0.1s;
 }
 .introduction-tab{
     display: flex;
@@ -108,6 +114,7 @@ body{
     border: none;
     width: 100%;
     height: 100%;
+    padding-right: 20px;
 }
 .menu-icons-linkedin:hover{
     height: 40px;
@@ -121,7 +128,6 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-right: 20px;
 }
 .menu-icons-end:hover{
     height: 40px;
@@ -137,8 +143,8 @@ body{
 .bar{
     background-color: white;
     height: 100%;
-    width: 10px;
-    margin-right: 15px;
+    width: 5px;
+    margin-right: 15px;margin-left: 30px;
 }
 .introduction-text{
     padding-bottom: 30px;
@@ -155,10 +161,7 @@ body{
     border: solid 3px white;
     height: 260px;
     width: 210px;
-    position: relative;
-}
-.pic-holder{
-    /* position: absolute; */
+    /* position: relative; */
 }
 .picture{
     position: absolute;
@@ -294,7 +297,7 @@ body{
 }
 .projects-tab{
     background-color: rgb(37,37,37);
-    height: 1800px;
+    height: 1350px;
     display: flex;
     flex-direction: column;
     color: white;
@@ -354,6 +357,9 @@ width: 90%;
     height: 180px;
     width: 180px;
 }
+.project-pic:hover{
+    cursor: pointer;
+}
 .project-body{
     display: flex;
     flex-direction: column;
@@ -390,8 +396,8 @@ margin-bottom: 10px;
     color: gray;
 }
 a {
-    color: white;
-    text-decoration: none; /* no underline */
+    color: inherit;
+    text-decoration: inherit;
   }
 #skillz {
     scroll-margin-top: 60px;
@@ -399,3 +405,101 @@ a {
 #projectz {
     scroll-margin-top: 60px;
   }
+#Home{
+    scroll-margin-top: 130px;
+}
+.contact-tab{
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    padding-top: 60px;
+}
+.contact-input-header{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.contact-me{    
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-size:60px;
+}
+.input-box{
+    padding: 10px 90px 10px 10px;
+    margin-top: 30px;
+    background-color: black;
+    border: none;
+    border-bottom: solid 1px gray;
+    color: white;
+    font-family: "Inter", sans-serif;
+    width: 200px;
+    outline: 0;
+}
+.input-box .placeholder{
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+.resume-button-2{
+    padding: 12px 25px 12px 25px;
+    color: white;
+    border-color: white;
+    background-color: transparent;
+    font-family: "Inter", sans-serif;
+    transition: background-color, 0.15s;
+    transition: color, 0.15s;
+    border-style: solid;
+    margin-top: 30px;
+}
+.resume-button-2:hover{
+    background-color: white;
+    color: black;
+    border-color: black;
+    cursor: pointer;
+}
+.input-box:focus{
+    border-color: white;
+    outline: 1px dotted #000;
+}
+.personal-info-tab{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.info-label{
+    font-family: "Inter", sans-serif;
+    color: gray;
+    font-size: 20px;
+}
+.info{
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-size: 15px; 
+}
+.info-containers{
+    margin-bottom: 30px;
+}
+.info:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.contact-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.menu-icons-linkedin-1{
+    height: 50px;
+    width: 50px;
+    margin: 7px 0 0 20px;
+    transition: height, 0.15s;
+    transition: width, 0.15s;
+}
+
+.menu-icons-linkedin-1:hover{
+    height: 65px;
+    width:  65px;
+    cursor: pointer;
+}
