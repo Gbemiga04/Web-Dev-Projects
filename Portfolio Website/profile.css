@@ -1,6 +1,7 @@
 body{
     background-color: black;
     height: 1000px;
+    z-index: 0;
 }
 .menu-bar-text-name{
     color: white;
@@ -22,6 +23,8 @@ body{
     z-index: 100;
     width: 100%;
     padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black;
 }
 .menu-bar-text{
     display: flex;
@@ -30,13 +33,33 @@ body{
 }
 .menu-text{
     font-size: 20px;
-    padding: 10px 0 0 40px
+    margin: 10px 0 0 40px;
+    position: relative;
 }
-.menu-icons{
+.menu-text:hover{
+    cursor: pointer;
+}
+.highlight{
+    width: 0px;
+    z-index: 10000;
+    bottom: 0;
+    height: 5px;
+    border-radius: 10px;
+    position: absolute;
+    background: white;
+    transition: width, 0.15s;
+}
+.menu-text:hover .highlight{
+    width: 110%;
+}
+.menu-icons-linkedin{
     length: 30px;
     width: 30px;
-    padding: 7px 0 0 20px
+    margin: 7px 0 0 20px;
+    transition: height, 0.15s;
+    transition: width, 0.15s;
 }
+
 .menu-icons-segment{
     display: flex;
     flex-direction: row;
@@ -44,5 +67,335 @@ body{
 .menu-icons-end{
     length: 30px;
     width: 30px;
-    padding: 7px 40px 0 30px
+    margin: 7px 40px 0 30px;
+    transition: height, 0.15s;
+    transition: width, 0.15s;
 }
+.introduction-tab{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    margin-top: 100px;
+    margin-left: 190px;
+    margin-right: 190px;
+    margin-bottom: 100px;
+
+}
+.introduction-body{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.resume-button{
+    padding: 18px 29px 18px 29px;
+    color: white;
+    border-color: white;
+    background-color: transparent;
+    font-family: "Inter", sans-serif;
+    transition: background-color, 0.15s;
+    transition: color, 0.15s;
+    border-style: solid;
+}
+.resume-button:hover{
+    background-color: white;
+    color: black;
+    border-color: black;
+    cursor: pointer;
+}
+.links{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+.menu-icons-linkedin:hover{
+    height: 40px;
+    width:  40px;
+    cursor: pointer;
+}
+.linked-in-container{
+    height: 40px;
+    width: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+}
+.menu-icons-end:hover{
+    height: 40px;
+    width:  40px;
+    cursor: pointer;
+}
+.title-text{
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-size: 60px;
+    padding-bottom: 10px;
+}
+.bar{
+    background-color: white;
+    height: 100%;
+    width: 10px;
+    margin-right: 15px;
+}
+.introduction-text{
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.main-text{
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-size: 20px;
+}
+.frame{
+    background-color: transparent;
+    border: solid 3px white;
+    height: 260px;
+    width: 210px;
+    position: relative;
+}
+.pic-holder{
+    /* position: absolute; */
+}
+.picture{
+    position: absolute;
+    background-color: white;
+    border: solid 3px white;
+    height: 260px;
+    width: 210px;
+    z-index: 10;
+    top: 140px;
+    right: 210px;
+    transition: top, 0.15s ;
+    transition: right, 0.15s ;
+}
+.picture:hover{
+    /* height: 280px;
+    width: 230px; */
+    top: 126px;
+    right: 200px;
+}
+.about-tab{
+    background-color: rgb(37,37,37);
+    height: 500px;
+}
+.skills-tab{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+}
+.skills-header{
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-size: 40px;
+    margin-top: 50px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.bar-1{
+    background-color: white;
+    width: 130px;
+    height: 4px;
+    border-radius: 10px;
+    position: absolute;
+    top: -10px;
+}
+.bar-2{
+    background-color: white;
+    width: 200px;
+    height: 4px;
+    border-radius: 10px;
+    position: absolute;
+    top: 55px;
+    left: -25%;
+}
+.skill-boxes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+}
+
+.skill-cont{
+    background-color: rgb(37,37,37);
+    height: 370px;
+    width: 250px;
+    color: black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.skill-cont:hover{
+    border: solid 2px white;
+    cursor: pointer;
+}
+.skill-cont:hover .skill-icons{
+    height: 70px;
+    width:  70px;
+    top: -165px;
+}
+.skill-cont:hover .skill-labels{
+    opacity: 1;
+    transition: opacity, 0.3s, ease-in, 0.3s;
+}
+.skill-cont:hover .skill-desc{
+    opacity: 1;
+    transition: opacity, 0.3s, ease-in, 0.3s;
+}
+.top-row{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.skill-icons{
+    width: 90px;
+    height: 90px;
+    transition: height, 0.15s;
+    transition: width, 0.15s;
+    position: absolute;
+
+}
+.icons-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    position: absolute;
+}
+.skill-labels{
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-size: 25px;
+    opacity: 0;
+    transition: opacity, 0.3s, ease-out, 0s;
+    padding-top: 30px;
+}
+.skill-desc{
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    color: white;
+    opacity: 0;
+}
+.projects-tab{
+    background-color: rgb(37,37,37);
+    height: 1800px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+}
+.projects-header{
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-size: 40px;
+    margin-top: 50px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.bar-1-pr{
+    background-color: white;
+    width: 210px;
+    height: 4px;
+    border-radius: 10px;
+    position: absolute;
+    top: -10px;
+}
+.bar-2-pr{
+    background-color: white;
+    width: 310px;
+    height: 4px;
+    border-radius: 10px;
+    position: absolute;
+    top: 55px;
+    left: -25%;
+}
+.project-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom:40px;
+
+width: 90%;
+}
+.project-pic{
+    border: solid 2px white;
+    height: 350px;
+    width: 260px;
+    border-radius: 10px;
+    margin-right: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.cards{
+    height: 120px;
+    width: 120px;
+    transition: height  0.15s;
+    transition: width 0.15s;
+}
+.project-pic:hover .cards{
+    height: 180px;
+    width: 180px;
+}
+.project-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.project-title{
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-size: 50px;
+
+margin-bottom: 10px;
+}
+.project-subhead{
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-size: 25px;
+
+}
+.project-text{
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-size: 22px;
+    width: 600px;
+    margin-bottom: 15px;
+}
+.learn-more{
+    font-family: "Inter", sans-serif;
+    color: white;
+    text-decoration: underline;
+    transition: color, 0.15s;
+}
+.learn-more:hover{
+    cursor: pointer;
+    color: gray;
+}
+a {
+    color: white;
+    text-decoration: none; /* no underline */
+  }
+#skillz {
+    scroll-margin-top: 60px;
+  }
+#projectz {
+    scroll-margin-top: 60px;
+  }
