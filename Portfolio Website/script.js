@@ -8,5 +8,9 @@ function SendMail(){
     emailjs.send("service_8qw9brw", "template_e0rmrwq", params).then(function (res){
         alert("Success! "+ res.status);
     })
+    document.getElementById("fullName").value = "";
+    document.getElementById("email_id").value="";
+    document.getElementById("message").value="";
+
 }
 }
