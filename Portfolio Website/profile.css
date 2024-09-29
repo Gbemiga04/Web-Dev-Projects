@@ -192,6 +192,7 @@ body{
     flex-direction: column;
     color: white;
     align-items: center;
+    /* padding-top: 50px; */
 }
 .skills-header{
     font-family: "Inter", sans-serif;
@@ -263,7 +264,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     margin-left: 50px;
-    margin-right: 50px;
+                 
 }
 .skill-icons{
     width: 90px;
@@ -287,12 +288,12 @@ body{
     font-size: 25px;
     opacity: 0;
     transition: opacity, 0.3s, ease-out, 0s;
-    padding-top: 30px;
+    padding-top: 100px;
 }
 .skill-desc{
     font-family: "Inter", sans-serif;
     color: white;
-    font-size: 18px;
+    font-size: 14px;
     font-family: "Inter", sans-serif;
     color: white;
     opacity: 0;
@@ -511,42 +512,97 @@ a {
     object-fit: cover;
 }
 .background-pic{
-    width: inherit;
-    height: 100%;
+    width: 100%;
+    height: auto;
     opacity: 40%;
     position: absolute;
     z-index: 10;
 }
 
 .background-pic-container{
-    height: 500px;
+    height: auto;
     width: 100%;
-    /* display: flex;
+    display: flex;
     flex-direction: row;
-    justify-content: right; */
+    justify-content: right;
     position: relative;
 }
 .about-header{
     font-family: "Inter", sans-serif;
     color: white;
-    font-size: 50px; 
-    padding: 40px 0px 20px 40px;
+    font-size: 50px;
+    padding: 40px 410px 20px 0px;
+
 }
 .about-body{
     font-family: "Inter", sans-serif;
     color: white;
-    font-size: 30px; 
-    padding: 0 0 0 40px;
-    width: 600px;
+    font-size: 25px; 
+    padding: 0 40px 0 0px;
+    width: 60%;
     height: 100% !important;
 }
 .about-content{
-    height: inherit;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+    align-items: end;
+    height: 500px;
 }
 #Aboutz{
     scroll-margin-top: 50px;
+}
+@media (max-width: 1098px){
+    .about-content{
+        height: 310px;
+    }
+    .skill-desc{
+        font-size: 12px;
+    }
+}
+@media (max-width: 1098px){
+    .about-content{
+        height: 310px;
+    }
+}
+@media (max-width: 1400px){
+    .about-content{
+        height: 420px;
+    }
+}
+@media (max-width: 1220px){
+    .about-content{
+        height: 350px;
+    }
+    .skill-desc{
+        font-size: 12px;
+    }
+}
+@media (max-width: 1110px){
+    .about-content{
+        height: 340px;
+    }
+    .skill-desc{
+        font-size: 10px;
+    }
+}
+@media (max-width: 1160px){
+    .about-content{
+        height: 360px;
+    }
+    .skill-desc{
+        font-size: 10px;
+    }
+}
+@media (min-width: 1590px){
+    .about-content{
+        height: 310px;
+    }
+    
+}
+@media (min-width: 1920px){
+    .about-content{
+        height: 500px;
+    }
 }
