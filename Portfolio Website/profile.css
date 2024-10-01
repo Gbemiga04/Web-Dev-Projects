@@ -353,12 +353,23 @@ width: 90%;
 .cards{
     height: 120px;
     width: 120px;
-    transition: height  0.15s;
-    transition: width 0.15s;
+    transition: height  0.15s, width 0.15s;
+
 }
 .project-pic:hover .cards{
     height: 180px;
     width: 180px;
+}
+.project-pic:hover{
+    cursor: pointer;
+}
+.card{
+    height: 80%;
+    transition: height  0.15s;
+
+}
+.project-pic:hover .card{
+    height: 100%
 }
 .project-pic:hover{
     cursor: pointer;

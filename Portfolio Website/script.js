@@ -14,6 +14,6 @@ function SendMail(){
 
 }
 }
-function1543r fv3rt5y67ujk adjustHeight() {
+function adjustHeight() {
     document.getElementById('about-content').style.height = document.defaultView.getComputedStyle(document.getElementById('background-pic-container'), "").getPropertyValue("height");
 }
